@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:moody/screens/home.dart';
 import 'package:moody/utilities/palette.dart';
 import 'package:moody/widgets/moody_login_container.dart';
 import 'package:moody/screens/signup.dart';
+import 'package:rive/rive.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -161,6 +161,11 @@ class _LoginScreenState extends State<LoginScreen> {
                               ],
                             ),
                           ),
+                          RiveAnimation.asset('assets/riv/check.riv',
+
+                              ///아까 지정한 스테이트 머신이름을 입력
+                              stateMachines: ["checkState"],
+                              onInit: (_) {}),
                         ],
                       ),
                     ),
@@ -172,12 +177,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 23, 0, 0),
                 child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => home()),
-                    );
-                  },
+                  onTap: () {},
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                     child: Container(

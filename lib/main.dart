@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moody/screens/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Moody',
       theme: ThemeData(useMaterial3: true),
       debugShowCheckedModeBanner: false,
-      home: const Text("Hi, My name is Moody!"),
+      home: LoginScreen(),
     );
   }
 }

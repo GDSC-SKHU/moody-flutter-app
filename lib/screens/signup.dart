@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:moody/screens/home.dart';
 import 'package:moody/utilities/palette.dart';
 import 'package:moody/widgets/moody_login_container.dart';
 import 'package:moody/screens/login.dart';
