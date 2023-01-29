@@ -12,11 +12,11 @@ class LoginContainer extends StatelessWidget {
     final _width = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Palette.white,
       height: _height * 0.8,
       width: _width * 0.9,
       child: Column(
           mainAxisAlignment: MainAxisAlignment.center, children: children),
+      decoration: BoxDecoration(color: Palette.bear),
     );
   }
 }
